@@ -1,0 +1,10 @@
+[package]
+name = "rust_ml_pipeline"
+version = "0.1.0"
+edition = "2021"
+
+# The Pandas alternative
+[dependencies]
+polars = { version = "0.26.1", features = ["lazy", "temporal", "describe", "json", "parquet", "dtype-datetime"] }
+# The NumPy alternative
+ndarray = "0.16"
